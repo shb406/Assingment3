@@ -8,37 +8,69 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <section>
-        <nav>
-            <div class="flex p-13">
+<body class="bg-gray-100">
+    <header class="bg-white shasow">
+            <div class="flex px-5 py-7 justify-between items-center max-auto">
                 <div>
-                    <button class=" border rounded-3xl bg-[#ABEF5F] h-6 w-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg></button>   
+                    
                 </div>
                 <h1 class="text-2xl	font-extrabold "> Rinterio</h1>
+               <nav>
+                <ul class="flex gap-4">
+                    <li class="font-black"><a href="" ></a>Home</li>
+                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Services</li>
+                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Portfolio</li>
+                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Blogs</li>
+                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Contact Us</li>
+                </ul>
+               </nav>
                 <div>
-                    <ul class="flex">
-                        <li class="font-extrabold">Home</li>
-                        <li>Services</li>
-                        <li>Portfolio</li>
-                        <li>Blogs</li>
-                        <li>Contact Us</li>
-                    </ul>
+                    
                 </div>
-                <div>
-                    <button class="border rounded-3xl h-8 w-8 "><i class="fa-sharp fa-thin fa-magnifying-glass"></i>
-                      </button>
-                      <button class="border "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                      </svg>
-                      </button>
-                </div>
-                
+             </div>
+    </section>
+    <section class="my-24">
+        <div class="py-2"> 
+            <div class=" flex justify-center items-center">
+                <img src="assets/banner.png" alt="">
             </div>
-        </nav>
+            <h2 class="text-6xl font-extrabold text-center py-2 ">A barn house of this design has a <br> striking appearance</h2>
+            <p class="text-center py-5">This barn house design mixes rustic charm with modern style. Weathered wood, large windows, and metal accents <br>create a unique look. Inside, the space is bright and open, combining traditional barn features with a sleek, contemporary feel.</p>
+        </div>
+        <div class="text-center">
+            <button class="btn bg-[#ABEF5F] text-stone-950 rounded-full">View Details</button>
+        </div>
+    </section>
+    <section class="bg-slate-300">
+        <img src="assets/Vector.png" alt="">
+        <button class="bg-[#FFFFFF] rounded-3xl py-2 px-3">
+            About us
+        </button>
+        <div>
+            <h2 class="text-4xl font-bold">We design thoughtful, <br>liveable spaces</h2>
+        </div>
+        <p>We design spaces that are not only beautiful but also practical and comfortable. <br>Every detail is carefully considered to create homes that feel welcoming and easy to live in, <br>balancing style with functionality.</p>
+        <div class="bg-[#FFFFFF]">
+            <div>
+                <img src="assets/commercial.png" alt="">
+            </div>
+            <div>
+                <h3 class="font-bold text-xl">Commercial</h3>
+                <p>Designing efficient, stylish spaces that enhance productivity and business success.</p>
+            </div>
+        </div>
+        <div class="bg-[#FFFFFF]">
+            <div>
+                <img src="assets/residential.png" alt="">
+            </div>
+            <div>
+                <h3 class="font-bold text-xl">Residential</h3>
+                <p>Creating comfortable, functional homes tailored to your needs and lifestyle.</p>
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>
