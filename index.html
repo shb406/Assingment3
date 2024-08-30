@@ -10,48 +10,53 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
 <style>
-    /* .card{
-        height: 190px;
-        width: 603px;
-        background-color: #FFFF;
-        border-radius: 16px;
-        padding: 24px 24px;
-    } */
+
+@media screen and (max-width:640px) {
     .hamburger span{
         height: 5px;
         width: 25px;
         background-color: #737373;
         border-radius: 5px;
+        margin-right: -200px; 
     }
     .hamburger{
-        display: grid;
+        display: flex;
         justify-content: space-between;
-        margin-left: 170px;
+        flex-direction: column;
+        cursor: pointer;
         gap: 2px;
+       
     }
+   
+}
+   
 </style>
 </head>
 <body class="bg-gray-100">
     <header class="bg-white bg-gradient-to-r from-[#FDFDFD] to-[#F3F1F1] ">
             <div class="flex justify-center items-center px-5 py-7 justify-evenly max-auto sm:grid-cols-2">
-                <h1 class="text-2xl	font-extrabold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-black bg-[#ABEF5F] rounded-3xl">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
-                  </svg>Rinterio</h1>
+                <div class="">
+                    <h1 class="text-2xl	font-extrabold max-sm:mr-64"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-black bg-[#ABEF5F] rounded-3xl">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                      </svg>Rinterio</h1>
+                </div>
                <nav>
-                <ul class="flex gap-4">
-                    <li class="font-black"><a href=""></a>Home</li>
-                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Services</li>
-                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Portfolio</li>
-                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Blogs</li>
-                    <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Contact Us</li>
-                </ul>
-                <!-- <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                </div> -->
+                <div class="bg-[#ABEF5F] rounded-3xl">
+                    <ul class="flex gap-4 max-sm:hidden">
+                        <li class="font-black"><a href=""></a>Home</li>
+                        <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Services</li>
+                        <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Portfolio</li>
+                        <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Blogs</li>
+                        <li class="text-gray-700 hover:text-green-500 "><a href=""></a>Contact Us</li>
+                    </ul>
+                    <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                </div>
                </nav>
-                <div class="flex justify-center items-center space-x-4">
+                <div class="flex justify-center items-center space-x-4 max-sm:hidden">
                     <div class="bg-white rounded-full p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -73,7 +78,7 @@
              </div>
     </header>
     <main>
-        <section class="sm:grid my-24">
+        <section class="my-24 max-sm:mx-6">
             <div class="py-2"> 
                 <div class="flex justify-center items-center">
                     <img src="assets/banner.png" alt="">
@@ -82,40 +87,42 @@
                 <p class="text-center py-5">This barn house design mixes rustic charm with modern style. Weathered wood, large windows, and metal accents <br>create a unique look. Inside, the space is bright and open, combining traditional barn features with a sleek, contemporary feel.</p>
             </div>
             <div class="text-center">
-                <button class="btn bg-[#D0FAA2] text-stone-950 rounded-full">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-black bg-[#ABEF5F] rounded-3xl">
+                <button class="btn bg-[#D0FAA2] text-stone-950 rounded-full max-sm:w-full">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-black bg-[#ABEF5F] rounded-3xl">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
                   </svg></button>
             </div>
         </section>
         <section class="bg-slate-300">
-            <div class="ml-10">
+            <div class="ml-10 max-sm:hidden">
                 <img src="assets/Vector.png" alt="">
             </div>
             <div class="mx-32 space-y-5 max-sm:m-5">
                 <div class="lg:flex gap-20">
                  <div>
-                    <button class="bg-[#FFFFFF] rounded-3xl py-2 px-3">
-                        About us<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                          </svg>
-                    </button>
-                    <div class="space-y-2">
-                        <div>
-                            <h2 class="text-4xl font-bold">We design thoughtful, <br>liveable spaces</h2>
+                    <div class="max-sm:text-center max-sm:mb-5">
+                        <button class="bg-[#FFFFFF] rounded-3xl py-2 px-3 max-sm:mt-5">
+                            About us<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                              </svg>
+                        </button>
+                        <div class="space-y-2">
+                            <div>
+                                <h2 class="text-4xl font-bold">We design thoughtful, <br>liveable spaces</h2>
+                            </div>
+                            <p>We design spaces that are not only beautiful but also practical and comfortable. <br>Every detail is carefully considered to create homes that feel welcoming and easy to live in.</p>
                         </div>
-                        <p>We design spaces that are not only beautiful but also practical and comfortable. <br>Every detail is carefully considered to create homes that feel welcoming and easy to live in.</p>
                     </div>
                     <div class="space-y-5">
-                        <div class="flex h-28 bg-[#FFFFFF] gap-4 rounded-3xl p-5">
+                        <div class="flex h-30 bg-[#FFFFFF] gap-4 rounded-3xl p-5">
                             <div>
                                 <img src="assets/commercial.png" alt="">
                             </div>
                             <div>
                                 <h3 class="font-bold text-xl">Commercial</h3>
-                                <p>Designing efficient, stylish spaces that enhance <br>productivity and business success.</p>
+                                <p>Designing efficient,stylish spaces that enhance<br>productivity and business success.</p>
                             </div>
                         </div>
-                        <div class="flex h-28 bg-[#FFFFFF] gap-4 rounded-3xl p-5 max-sm:mb-2">
+                        <div class="flex h-30 bg-[#FFFFFF] gap-4 rounded-3xl p-5 max-sm:mb-2">
                             <div>
                                 <img src="assets/residential.png" alt="">
                             </div>
@@ -126,7 +133,7 @@
                         </div>
                     </div>
                  </div>
-                 <div>
+                 <div class="max-sm:mt-5">
                     <img src="assets/Rectangle.png" alt="">
                 </div>
                 </div>
@@ -147,7 +154,7 @@
                         <h4 class="font-bold text-xl">Design Process</h4>
                         <p>Blends creativity and strategy to solve problems effectively, <br>ensuring the best outcomes.</p>
                     </div>
-                    <div class="bg-[#A4DAC3] rounded-3xl p-6 lg;mb-24 max-sm:mb-10">
+                    <div class="bg-[#A4DAC3] rounded-3xl p-6 lg:mb-24 max-sm:mb-10">
                         <img src="assets/vision.png" alt="">
                         <h4 class="font-bold text-xl">Supervision</h4>
                         <p>Ensures tasks are completed correctly, guiding progress and <br>maintaining quality control.</p>
@@ -160,8 +167,8 @@
                 </div>
             </div>
         </section>
-        <section class="bg-cover bg-center h-screen" style="background-image: url('assets/bg.jpg');">
-            <div class="max-sm:text-center">
+        <section class="bg-cover bg-center max-sm:h-full h-screen" style="background-image: url('assets/bg.jpg');">
+            <div class="max-sm:text-center max-sm:m-6">
                 <div class="text-center my-2 space-y-2">
                 <button class="bg-[#ABEF5F] p-2.5 rounded-3xl mt-10"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -171,16 +178,16 @@
                 <p>Let’s dive into the next project, aligning vision, resources, <br>and creativity to deliver an exceptional and impactful solution.</p>
                 </div>
                 <div class="flex justify-center items-center max-sm:m-5">
-                    <form class="space-y-2 lg:grid grid-cols-2 mx-24 w-3/5 gap-2 items-center max-sm:m-5">
+                    <form class="space-y-2 lg:grid grid-cols-2 mx-24 w-3/5 gap-2 items-center max-sm:m-5 max-sm:w-full max-sm:mx-0">
                         <input class="h-10 w-full rounded-2xl p-6" type="text" name="" id="" placeholder="First Name*">
                         <input class="h-10 w-full rounded-2xl p-6" type="text" name="" id="" placeholder="Last Name*">
                         <input class="h-10 w-full rounded-2xl p-6" type="text" name="" id="" placeholder="Phone-number*">
                         <input class="h-10 w-full rounded-2xl p-6" type="text" name="" id="" placeholder="Email-number*">
-                        <textarea class="h-40 rounded-2xl lg:col-span-2 p-6" name="" id="" cols="" rows="" placeholder="Write your message here"></textarea>
+                        <textarea class="h-40 rounded-2xl lg:col-span-2 max-sm:col-span-1 p-6 max-sm:w-full" name="" id="" cols="" rows="" placeholder="Write your message here"></textarea>
                     </form>
                 </div>
                <div class="text-center my-5">
-                <button class="bg-[#ABEF5F] p-2.5 col-span-2 font-bold text-xl rounded-3xl w-auto">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-white bg-black rounded-3xl">
+                <button class="bg-[#ABEF5F] p-2.5 col-span-2 font-bold text-xl rounded-3xl w-auto max-sm:w-full max-sm:mb-5">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-white bg-black rounded-3xl">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
                   </svg>
                   </button>
@@ -189,8 +196,8 @@
            
         </section>
     </main>
-    <footer class="bg-black max-sm:grid">
-        <div class="mx-32 max-sm:m-5">
+    <footer class="bg-black">
+        <div class="mx-32 max-sm:m-8">
             <div class="flex justify-center items-center">
                 <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-black bg-[#ABEF5F] rounded-3xl mt-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
@@ -198,8 +205,8 @@
                 <h3 class="p-2.5 col-span-2 font-bold text-xl rounded-2xl w-auto text-white  mt-10">Rinterio</h3>
             </div>
               <p class="text-center text-[#737373]">This project involves designing a residential house, focusing on both functionality and aesthetics. The design aims to create a comfortable and modern living space that meets the needs of its inhabitants while also being energy-efficient and sustainable.</p>
-              <div>
-                <ul class="flex justify-evenly items-center text-[#E9E9E9]">
+              <div class="max-sm:grid">
+                <ul class="lg:flex justify-evenly items-center text-[#E9E9E9] max-sm:grid max-sm:gap-8">
                     <li>Home</li>
                     <li>Services</li>
                     <li>Portfolio</li>
@@ -208,7 +215,7 @@
                 </ul>
               </div>
               <div class="text-center my-5">
-                <button class="bg-[#ABEF5F] p-2.5 col-span-2 font-bold text-xl rounded-3xl w-auto  mb-10">Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-white bg-black rounded-3xl">
+                <button class="bg-[#ABEF5F] p-2.5 col-span-2 font-bold text-xl rounded-3xl w-auto  mb-10 max-sm:w-full">Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-white bg-black rounded-3xl">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
                   </svg>
                   </button>
